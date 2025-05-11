@@ -4,96 +4,101 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="author" content="Curtis Jones" />
-  <meta name="description" content="A premier GitHub project by Curtis Jones." />
-  <title>🚀 Welcome to My Git Splash Page 🚀</title>
+  <meta name="description" content="Curtis Jones - IAM & Cybersecurity Portfolio" />
+  <title>🚀 Curtis Jones · GitHub Projects</title>
   <style>
     body {
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
-      background: #f4f4f4;
-    }
-
-    body::before {
-      content: "";
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: url("BLACTEC LOGO REVAMP Jpg.jpg") no-repeat center center;
+      color: #333;
+      background: url('data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/4gHYSUNDX1BST0ZJTEUAAQEAAAHIAAAAAAQwAABtbnRyUkdCI...') no-repeat center center fixed;
       background-size: cover;
-      opacity: 0.5;
-      z-index: -1;
     }
 
     header {
-      background: #24292e;
+      background: rgba(36, 41, 46, 0.95);
       color: #fff;
-      padding: 1rem;
+      padding: 2rem;
       text-align: center;
     }
 
     main {
-      flex: 1;
+      max-width: 700px;
+      margin: 2rem auto;
+      background: rgba(255, 255, 255, 0.95);
       padding: 2rem;
-      max-width: 800px;
-      margin: auto;
-      background: white;
-      border-radius: 5px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
     }
 
-    .project-link, .all-projects, .iam-dev {
-      background: #24292e;
-      color: #fff;
-      padding: 1rem;
-      margin-top: 2rem;
+    h1, h2 {
       text-align: center;
+    }
+
+    .bio {
+      font-size: 0.95rem;
+      margin-bottom: 2rem;
+      line-height: 1.5;
+    }
+
+    .link-section {
+      margin-bottom: 1.5rem;
+      padding: 1rem;
+      background: #f0f0f0;
+      border-left: 5px solid #24292e;
       border-radius: 4px;
     }
 
-    .project-link a, .all-projects a, .iam-dev a {
-      color: #58a6ff;
-      text-decoration: none;
+    .link-section a {
       font-weight: bold;
+      color: #0366d6;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 0.5rem;
     }
 
     footer {
       text-align: center;
       padding: 1rem;
-      background: #ddd;
+      background: rgba(255, 255, 255, 0.8);
+      margin-top: 2rem;
+      font-size: 0.85rem;
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>🚀 My Git Splash Page 🚀</h1>
+    <h1>🚀 Curtis Jones</h1>
+    <p>Cybersecurity Architect · IAM/PAM Strategist · Cloud Security Engineer</p>
   </header>
 
   <main>
-    <h2>Welcome!</h2>
-    <p>This is a static <code>index.html</code> file for my new GitHub repository.</p>
-    <p>Closed to cloning, forking, or contributing at this time. I will update as the project evolves.</p>
+    <section class="bio">
+      With 17+ years in cybersecurity, IAM, and network engineering, I design secure hybrid/cloud architectures, lead GRC/attestation projects, and implement enterprise IAM/PAM roadmaps. Skilled in Azure, AWS, Okta, Terraform, and FedRAMP-aligned security operations.
+    </section>
 
-    <div class="project-link">
-      🔗 Featured Project:  
-      <a href="https://github.com/curtis9662/EnterpriseXP" target="_blank">EnterpriseXP on GitHub</a>
-    </div>
+    <section class="link-section">
+      <h2>🧠 Featured Project</h2>
+      <p><strong>EnterpriseXP:</strong> End-to-end enterprise IAM enablement project with Azure and AWS integration.</p>
+      <a href="https://github.com/curtis9662/EnterpriseXP" target="_blank">View EnterpriseXP on GitHub</a>
+    </section>
 
-    <div class="iam-dev">
-      🆔 Explore All My IAM OKTA/AUTH0 PoC:  
-      <a href="https://dev-66700829.okta.com/" target="_blank">My OKTA Dev PoC</a>
-    </div>
+    <section class="link-section">
+      <h2>🧪 IAM / OKTA / AUTH0 POC</h2>
+      <p>My Okta Developer environment for demonstrating SSO, MFA, and custom IAM logic.</p>
+      <a href="https://dev-66700829.okta.com/" target="_blank">Visit OKTA PoC Dashboard</a>
+    </section>
 
-    <div class="all-projects">
-      📁 Explore All My GitHub Projects:  
-      <a href="https://github.com/curtis9662" target="_blank">github.com/curtis9662</a>
-    </div>
+    <section class="link-section">
+      <h2>📚 All GitHub Projects</h2>
+      <p>A complete list of my open-source projects and documentation, including labs, scripts, and security configs.</p>
+      <a href="https://github.com/curtis9662" target="_blank">Browse All Projects on GitHub</a>
+    </section>
   </main>
 
   <footer>
-    <p>Created by Curtis Jones 2025 · <a href="mailto:help@blactec.biz">Contact</a></p>
+    Created by Curtis Jones · <a href="mailto:help@blactec.biz">Contact</a> · © 2025
   </footer>
 </body>
 </html>
