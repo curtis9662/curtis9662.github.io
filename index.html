@@ -125,12 +125,6 @@
     </section>
 
     <section class="tool-section">
-      <h2>🛠️ JWT Decoder Tool</h2>
-      <textarea id="jwt" rows="4" cols="60" placeholder="Paste JWT here"></textarea>
-      <pre id="jwtOutput"></pre>
-    </section>
-
-    <section class="tool-section">
       <h2>🗓️ Experience Timeline</h2>
       <ul class="timeline">
         <li>2023 ► Current Leading Multiple Moderate ATO Cloud Deployment, and Designed and Implemented Cloud Security Architectures: Developed advanced security blueprints for major cloud platforms (AWS, Azure, GCP), optimizing security posture and resilience against sophisticated threats. Develop | Maintain Cloud Architecture Diagrams, and Validate Control Implementation.
@@ -191,15 +185,6 @@
       }
     });
 
-    // JWT decoder
-    document.getElementById('jwt').addEventListener('input', function() {
-      try {
-        const [header, payload] = this.value.split('.').map(str => JSON.parse(atob(str)));
-        document.getElementById('jwtOutput').innerText = JSON.stringify(payload, null, 2);
-      } catch {
-        document.getElementById('jwtOutput').innerText = 'Invalid JWT';
-      }
-    });
 
     // Dark mode toggle
     function toggleDarkMode() {
