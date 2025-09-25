@@ -82,6 +82,50 @@
       float: right;
       margin-top: -2rem;
     }
+    /* Styles for the strength areas section */
+    #Strength-areas {
+      margin-top: 2rem;
+      padding: 1.5rem;
+      background: #f8f9fa;
+      border-radius: 8px;
+      border: 1px solid #e0e0e0;
+    }
+    #Strength-areas h2 {
+      color: #24292e;
+      border-bottom: 2px solid #0366d6;
+      padding-bottom: 0.5rem;
+    }
+    #Strength-areas article {
+      margin-bottom: 2rem;
+      padding: 1rem;
+      background: var(--card-bg);
+      border-radius: 6px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    }
+    #Strength-areas h3 {
+      color: #0366d6;
+      margin-top: 0;
+    }
+    #Strength-areas ul {
+      padding-left: 1.5rem;
+    }
+    #Strength-areas li {
+      margin-bottom: 0.8rem;
+      line-height: 1.5;
+    }
+    #Strength-areas strong {
+      color: #24292e;
+    }
+    #Strength-areas em {
+      font-size: 0.9rem;
+      color: #666;
+    }
+    #Strength-areas code {
+      background: #f6f8fa;
+      padding: 2px 4px;
+      border-radius: 3px;
+      font-size: 0.85rem;
+    }
   </style>
 </head>
 <body>
@@ -129,9 +173,9 @@ I bring over 18 years of professional experience in cybersecurity, identity and 
   <ul>
     <li><a href="https://otx.alienvault.com/browse/global/pulses?include_inactive=0&sort=-modified&page=1&limit=1000" target="_blank">AlienVault OTX 👽</a></li>
     <li><a href="https://nvd.nist.gov/vuln/search/results?form_type=Basic&results_type=overview&search_type=all&isCpeNameSearch=false" target="_blank">NIST National Vulnerability Database (NVD) 🌐</a></li>
-    <li><a href="https://www.cisa.gov/known-exploited-vulnerabilities-catalog" target="_blank">CISA KEV Catalog 💡a></li>
+    <li><a href="https://www.cisa.gov/known-exploited-vulnerabilities-catalog" target="_blank">CISA KEV Catalog 💡</a></li>
     <li><a href="https://www.exploit-db.com/" target="_blank">Exploit Database 💿</a></li>
-    <li><a href="https://www.rapid7.com/db/" target="_blank">Rapid7 Vulnerability DB 7 ️⃣</a></li>
+    <li><a href="https://www.rapid7.com/db/" target="_blank">Rapid7 Vulnerability DB 7️⃣</a></li>
     <li><a href="https://packetstormsecurity.com/" target="_blank">Packet Storm Security 🔱</a></li>
     <li><a href="https://www.cve.org/" target="_blank">CVE.org (MITRE) 🛡</a></li>
     <li><a href="https://security-tracker.debian.org/" target="_blank">Debian Security Tracker 🚥</a></li>
@@ -148,8 +192,51 @@ I bring over 18 years of professional experience in cybersecurity, identity and 
     <li><a href="https://community.qualys.com/community/vulnerabilities" target="_blank">Qualys Vulnerability Alerts ⚠</a></li>
     <li><a href="https://www.tenable.com/security/research" target="_blank">Tenable Security Advisories ☣</a></li>
   </ul>
-  <p style="font-style: italic; font-size: 0.9em;">Compiled by Curtis Jones, Msc, CISSP, OSCP, MSCA, GIAC, 🔴🔵🟣 Team - Blactec Cyber Threat Monitoring Resources <li><a href="https://blactec.biz/" target="_blank">Blactec</a></li></p>
+  <p style="font-style: italic; font-size: 0.9em;">Compiled by Curtis Jones, Msc, CISSP, OSCP, MSCA, GIAC, 🔴🔵🟣 Team - Blactec Cyber Threat Monitoring Resources <a href="https://blactec.biz/" target="_blank">Blactec</a></p>
 </section>
+
+    <!-- NEW STRENGTH AREAS SECTION -->
+    <section id="Strength-areas">
+      <h2>Addressing Identified Strength Areas</h2>
+
+      <article id="ai-cybersecurity">
+        <h3>AI in Cybersecurity — Practical Implementations & Outcomes</h3>
+        <p>
+          Demonstrated experience applying AI/ML to strengthen detection, response and automation across cloud and hybrid environments. Examples and concrete accomplishments to highlight:
+        </p>
+        <ul>
+          <li><strong>Anomaly detection pipelines:</strong> Deployed ML-driven anomaly detection that reduced mean time to detection (MTTD) for suspicious IAM behavior by identifying statistical deviations in API call patterns and token abuse across multi-cloud telemetry.</li>
+          <li><strong>Threat enrichment & prioritization:</strong> Integrated external threat feeds and internal telemetry into an ML model that enriched alerts with risk scores, enabling SOC teams to triage high-risk incidents faster and reduce false positives by X–Y%.</li>
+          <li><strong>Automated playbooks:</strong> Built automated remediation playbooks triggered by model-based classifiers (e.g., automated key revocation, session termination, or privileged session lockdown), improving response time and reducing manual analyst effort.</li>
+          <li><strong>Pilot programs / PoCs:</strong> Led multiple proof-of-concept projects using supervised and unsupervised models (classification, clustering, time-series anomaly detection) to validate signal quality and operational impact before production rollout.</li>
+        </ul>
+
+        <p>
+          <em>Suggested resume/website line:</em> "Designed and deployed ML-driven anomaly detection and automated response playbooks across multi-cloud environments—reducing high-confidence false positives and lowering MTTD for privileged credential misuse."
+        </p>
+      </article>
+
+      <article id="cost-optimization">
+        <h3>Cost Optimization — Security That Scales</h3>
+        <p>
+          Demonstrate where security improvements were achieved while reducing or controlling operational cost. Focus on measurable outcomes and practical levers used:
+        </p>
+        <ul>
+          <li><strong>Rightsizing & policy-driven tagging:</strong> Implemented policy-driven resource tagging and rightsizing to align security monitoring costs (log ingestion, storage, and EDR agents) with business value, reducing cloud observability spend while preserving critical telemetry.</li>
+          <li><strong>Tiered detection strategy:</strong> Designed a tiered telemetry retention and analytics strategy (hot/warm/cold) and selective log capture for low-risk assets, cutting log storage costs by a measurable percentage while maintaining forensic capability for high-risk systems.</li>
+          <li><strong>Automation to reduce human cost:</strong> Automated repetitive security workflows (patching, certificate rotation, credential rotation, incident enrichment) to lower manual hours and contractor spend—freeing staff to work on higher-value tasks.</li>
+          <li><strong>Vendor consolidation & contract optimization:</strong> Evaluated and consolidated overlapping security tools (SIEM/XDR/DLP) where appropriate, negotiating licensing terms and re-allocating budget toward higher ROI areas such as identity and cloud-native protections.</li>
+        </ul>
+
+        <p>
+          <em>Suggested resume/website line:</em> "Spearheaded a tiered telemetry and rightsizing program that cut observability costs by X% while enhancing detection coverage for critical assets; drove automation initiatives that reduced security operations overhead by Y%."
+        </p>
+      </article>
+
+      <footer>
+        <p>Notes: replace <code>X%</code> and <code>Y%</code> with measurable outcomes where available (saves credibility). If precise metrics are unavailable, use conservative estimates and label them as such (e.g., "~15% reduction in storage costs").</p>
+      </footer>
+    </section>
 
     <section class="tool-section">
       <h2>🗓️ Experience Timeline</h2>
@@ -176,11 +263,11 @@ I bring over 18 years of professional experience in cybersecurity, identity and 
 
     <section class="tool-section">
       <h2>📣 Testimonials</h2>
-      <blockquote>“Curtis developed the security architecture for our Global hybridized IAM strategy end-to-end Leading to a multi Billion Dollar Merger & Acquisition— brilliant work.” ► CIO, Apptio</blockquote>
-      <blockquote>“He’s a go-to for on-prem and agnostic environment cloud security and compliance readiness.” ► CISO, Humana</blockquote>
-	  <blockquote>“Curtis' adeptness, conversational proficiency, and corporate readiness is welcome in ANY Compliance Audit” ► Grant Thornton, Optum HITRUST Audit i1 & r2</blockquote>
-	  <blockquote>“Curtis' availability and off-the-cuff knowledge expedites projects, and allowed us to complete multiple engagements 2-6 weeks ahead of forecast.” ► CISO, InfoSec Coverdell</blockquote>
-	  <blockquote>“Curtis architected our entire IAM migration to Azure and AWS, enabling full compliance with HIPAA, SOX, and PCI-DSS across 1,400+ API endpoints—an outstanding execution.” ► CISO, Gallagher</blockquote> <blockquote>“His IAM governance strategy and zero-trust implementation reduced our threat exposure by over 70%. Curtis is a strategic force in cloud security.” ► Director of Cybersecurity, IMPLUS</blockquote> <blockquote>“During a sensitive M&A involving 20+ brands, Curtis engineered a flawless hybrid-cloud integration across AWS and Azure with zero data leakage.” ► VP of Infrastructure, CPS</blockquote> <blockquote>“The cloud compliance portals and security documentation Curtis delivered streamlined our FedRAMP and SOC2 audits—cutting our attestation cycle by half.” ► GRC Lead, Apptio</blockquote> <blockquote>“Curtis’s Red Team simulations and purple team integrations hardened our Azure footprint like never before. Our incident response maturity skyrocketed.” ► Security Operations Manager, NYU Langone</blockquote> <blockquote>“We gained unparalleled IAM visibility across 7,000 users and 12,000+ devices thanks to Curtis’s blueprint. His work enabled real-time posture reporting to the board.” ► CIO, IMPLUS</blockquote> <blockquote>“His Terraform-driven Azure Labs environment revolutionized our internal security training. Curtis turns infrastructure into learning experiences.” ► DevSecOps Manager, CPS</blockquote> <blockquote>“Curtis transformed our GCP and AWS security baselines into a unified, compliant cloud control framework—seamlessly aligning with ISO 27001 and HITRUST.” ► Cloud Architect, Gallagher</blockquote> <blockquote>“The shift-left architecture Curtis pioneered empowered our developers with secure-by-default APIs—an IAM milestone for our engineering org.” ► VP of Engineering, Apptio</blockquote> <blockquote>“Curtis turned our vulnerability management process from reactive to predictive using GuardDuty, CodeGuru, and strategic threat modeling.” ► Security Compliance Lead, CPS</blockquote>
+      <blockquote>"Curtis developed the security architecture for our Global hybridized IAM strategy end-to-end Leading to a multi Billion Dollar Merger & Acquisition— brilliant work." ► CIO, Apptio</blockquote>
+      <blockquote>"He's a go-to for on-prem and agnostic environment cloud security and compliance readiness." ► CISO, Humana</blockquote>
+	  <blockquote>"Curtis' adeptness, conversational proficiency, and corporate readiness is welcome in ANY Compliance Audit" ► Grant Thornton, Optum HITRUST Audit i1 & r2</blockquote>
+	  <blockquote>"Curtis' availability and off-the-cuff knowledge expedites projects, and allowed us to complete multiple engagements 2-6 weeks ahead of forecast." ► CISO, InfoSec AJG</blockquote>
+	  <blockquote>"Curtis architected our entire IAM migration to Azure and AWS, enabling full compliance with HIPAA, SOX, and PCI-DSS across 1,400+ API endpoints—an outstanding execution." ► CISO, AJG</blockquote> <blockquote>"His IAM governance strategy and zero-trust implementation reduced our threat exposure by over 70%. Curtis is a strategic force in cloud security." ► Director of Cybersecurity, IMPLUS</blockquote> <blockquote>"During a sensitive M&A involving 20+ brands, Curtis engineered a flawless hybrid-cloud integration across AWS and Azure with zero data leakage." ► VP of Infrastructure, CPS</blockquote> <blockquote>"The cloud compliance portals and security documentation Curtis delivered streamlined our FedRAMP and SOC2 audits—cutting our attestation cycle by half." ► GRC Lead, Apptio</blockquote> <blockquote>"Curtis's Red Team simulations and purple team integrations hardened our Azure footprint like never before. Our incident response maturity skyrocketed." ► Security Operations Manager, NYU Langone</blockquote> <blockquote>"We gained unparalleled IAM visibility across 7,000 users and 12,000+ devices thanks to Curtis's blueprint. His work enabled real-time posture reporting to the board." ► CIO, IMPLUS</blockquote> <blockquote>"His Terraform-driven Azure Labs environment revolutionized our internal security training. Curtis turns infrastructure into learning experiences." ► DevSecOps Manager, CPS</blockquote> <blockquote>"Curtis transformed our GCP and AWS security baselines into a unified, compliant cloud control framework—seamlessly aligning with ISO 27001 and HITRUST." ► Cloud Architect, AJG</blockquote> <blockquote>"The shift-left architecture Curtis pioneered empowered our developers with secure-by-default APIs—an IAM milestone for our engineering org." ► VP of Engineering, Apptio</blockquote> <blockquote>"Curtis turned our vulnerability management process from reactive to predictive using GuardDuty, CodeGuru, and strategic threat modeling." ► Security Compliance Lead, CPS</blockquote>
     </section>
 
     <p id="last-updated"></p>
