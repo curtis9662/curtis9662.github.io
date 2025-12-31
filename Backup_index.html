@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Curtis Jones" />
+  <meta name="description" content="Curtis Jones - IAM & Cybersecurity Portfolio" />
+  <title>🚀 Curtis Jones · GitHub Projects</title>
+  <style>
+    :root {
+      --bg: #f4f4f4;
+      --text: #333;
+      --accent: #0366d6;
+      --card-bg: #fff;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      color: var(--text);
+      background-color: var(--bg);
+    }
+    header {
+      background: #24292e;
+      color: #fff;
+      padding: 2rem;
+      text-align: center;
+    }
+    main {
+      max-width: 1900px;
+      margin: 2rem auto;
+      background: var(--card-bg);
+      padding: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    h1, h2 {
+      text-align: center;
+    }
+    .bio {
+      font-size: 0.95rem;
+      margin-bottom: 2rem;
+      line-height: 1.5;
+    }
+    .link-section, .tool-section {
+      margin-bottom: 1.5rem;
+      padding: 1rem;
+      background: #f0f0f0;
+      border-left: 5px solid #24292e;
+      border-radius: 4px;
+    }
+    .link-section a, .tool-section a {
+      font-weight: bold;
+      color: var(--accent);
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 0.5rem;
+    }
+    .timeline {
+      padding-left: 20px;
+    }
+    .timeline li {
+      margin-bottom: 10px;
+    }
+    #last-updated {
+      font-size: 0.85rem;
+      text-align: center;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: #e0e0e0;
+      margin-top: 2rem;
+      font-size: 0.85rem;
+    }
+    .dark-mode {
+      --bg: #1e1e1e;
+      --text: #ffffff;
+      --card-bg: #1e1e1e;
+    }
+    .toggle-btn {
+      float: right;
+      margin-top: -2rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>🚀 Curtis Jones</h1>
+    <button class="toggle-btn" onclick="toggleDarkMode()">🌓 Toggle Dark Mode</button>
+    <p>Cybersecurity Architect · IAM/PAM Strategist · Cloud Security Engineer · DevSecOps</p>
+  </header>
+  <main>
+    <section class="bio">
+I bring over 18 years of professional experience in cybersecurity, identity and access management (IAM), application security, vulnerability mitigation & remediation, Vendor Application Security Attestations / Audits, and network engineering. My expertise includes the design and implementation of secure hybrid-cloud architectures, leadership of governance, risk, and compliance (GRC) initiatives, and the strategic execution of enterprise IAM and privileged access management (PAM) roadmaps. I possess advanced technical proficiency in Azure, AWS, Okta, and Terraform, and have successfully led security operations aligned with FedRAMP and other regulatory frameworks.
+    </section>
+
+    <section class="link-section">
+      <h2>📊 Security Architecture Work Flow</h2>
+      <p>My dynamically updated GitHub Projects KANBAN board—tracking IAM, DevSecOps, and architectural implementation priorities.</p>
+      <a href="https://github.com/users/curtis9662/projects/3" target="_blank">View KANBAN Workflow Board</a>
+    </section>
+
+    <section class="link-section">
+      <h2>🧠 My Enterprise Experience</h2>
+      <p><strong>EnterpriseXP:</strong> End-to-end enterprise IAM enablement project with Azure and AWS integration.</p>
+      <a href="https://github.com/curtis9662/EnterpriseXP" target="_blank">View EnterpriseXP on GitHub</a>
+    </section>
+
+    <section class="link-section">
+      <h2>🆔 IAM / OKTA / AUTH0 POC</h2>
+      <p>My Okta Developer environment for demonstrating SSO, MFA, and custom IAM logic.</p>
+      <a href="https://dev-66700829.okta.com/" target="_blank">Visit OKTA PoC Dashboard</a>
+    </section>
+
+    <section class="link-section">
+      <h2>📁 All GitHub Projects</h2>
+      <p>A complete list of my open-source projects and documentation, including labs, scripts, and security configs.</p>
+      <a href="https://github.com/curtis9662" target="_blank">Browse All Projects on GitHub</a>
+    </section>
+
+    <section class="tool-section">
+      <h2>📈 Curtis' Security Dashboard</h2>
+      <canvas id="securityChart" width="600" height="300"></canvas>
+    </section>
+	
+	<section>
+  <h2>My Top 20 Cybersecurity CVE Alert & Threat Intelligence Self Study & Update Repos</h2>
+  <ul>
+    <li><a href="https://otx.alienvault.com/browse/global/pulses?include_inactive=0&sort=-modified&page=1&limit=1000" target="_blank">AlienVault OTX 👽</a></li>
+    <li><a href="https://nvd.nist.gov/vuln/search/results?form_type=Basic&results_type=overview&search_type=all&isCpeNameSearch=false" target="_blank">NIST National Vulnerability Database (NVD) 🌐</a></li>
+    <li><a href="https://www.cisa.gov/known-exploited-vulnerabilities-catalog" target="_blank">CISA KEV Catalog 💡a></li>
+    <li><a href="https://www.exploit-db.com/" target="_blank">Exploit Database 💿</a></li>
+    <li><a href="https://www.rapid7.com/db/" target="_blank">Rapid7 Vulnerability DB 7 ️⃣</a></li>
+    <li><a href="https://packetstormsecurity.com/" target="_blank">Packet Storm Security 🔱</a></li>
+    <li><a href="https://www.cve.org/" target="_blank">CVE.org (MITRE) 🛡</a></li>
+    <li><a href="https://security-tracker.debian.org/" target="_blank">Debian Security Tracker 🚥</a></li>
+    <li><a href="https://security.snyk.io/" target="_blank">Snyk Vulnerability DB 🐕‍🦺</a></li>
+    <li><a href="https://attack.mitre.org/" target="_blank">MITRE ATT&CK Framework 🖼</a></li>
+    <li><a href="https://www.zerodayinitiative.com/advisories/published/" target="_blank">Zero Day Initiative 0️⃣</a></li>
+    <li><a href="https://redcanary.com/threat-detection-report/" target="_blank">Red Canary Threat Detection Report ♦</a></li>
+    <li><a href="https://threatpost.com/" target="_blank">ThreatPost 📫</a></li>
+    <li><a href="https://www.recordedfuture.com/threat-intelligence" target="_blank">Recorded Future ⏺</a></li>
+    <li><a href="https://www.fireeye.com/current-threats.html" target="_blank">Mandiant Threat Intelligence 📲</a></li>
+    <li><a href="https://www.trendmicro.com/vinfo/us/security/news/vulnerability" target="_blank">Trend Micro Security News 📰</a></li>
+    <li><a href="https://security.googleblog.com/" target="_blank">Google Security Blog 🌈</a></li>
+    <li><a href="https://kb.cert.org/vuls/" target="_blank">CERT Vulnerability Notes 📝</a></li>
+    <li><a href="https://community.qualys.com/community/vulnerabilities" target="_blank">Qualys Vulnerability Alerts ⚠</a></li>
+    <li><a href="https://www.tenable.com/security/research" target="_blank">Tenable Security Advisories ☣</a></li>
+  </ul>
+  <p style="font-style: italic; font-size: 0.9em;">Compiled by Curtis Jones, Msc, CISSP, OSCP, MSCA, GIAC, 🔴🔵🟣 Team - Blactec Cyber Threat Monitoring Resources <li><a href="https://blactec.biz/" target="_blank">Blactec</a></li></p>
+</section>
+
+    <section class="tool-section">
+      <h2>🗓️ Experience Timeline</h2>
+      <ul class="timeline">
+        <li>2023 ► Current Leading Multiple Moderate ATO Cloud Deployment, and Designed and Implemented Cloud Security Architectures: Developed advanced security blueprints for major cloud platforms (AWS, Azure, GCP), optimizing security posture and resilience against sophisticated threats. Develop | Maintain Cloud Architecture Diagrams, and Validate Control Implementation.
+			Monitor, manage, and respond to Enterprise Security events In Arctic Wolf, Tenable, Microsoft XDR.
+			Work with the Infrastructure, Support, Legal, HR, Development, and Operations teams to identify, Isolate, Mitigate, and Remediate threats/incursions/breaches or suspected nefarious activities.
+
+</li>
+        <li>2020 ► 2022 Migrated Legacy IAM to Azure B2B/B2C, and Cross-Team Security Collaboration: Partnered with infrastructure and DevOps teams to embed security practices throughout the IT lifecycle, including Azure environment design, development, deployment, and operations.
+			Azure Security Architecture: Designed and implemented robust Azure security solutions with a focus on IAM, RBAC, Azure AD, Key Vault, Security Center, Monitor, and Sentinel to establish layered security controls
+</li>
+        <li>2017 ►  2019 Designed Global PAM with CyberArk, Microsoft AAD, and Ping Implement Scrum knowledge, & Agile Methodologies w/ appropriate delegation, to provide structure and direction to interns and employees. 
+			Mentor junior staff members 36+ personnel to promote standardization and project initiatives / Provide orientation and training. Conduct a security assessment of an Azure environment to identify and mitigate security risks
+</li>
+        <li>2007 - 2016 ► Spearheaded the design and implementation of robust cybersecurity architectures, aligning with organizational goals and proactively addressing the evolving threat landscape within Fortune 500 orgs & Public Sector Healthcare Providers</li>
+      </ul>
+    </section>
+
+    <section class="tool-section">
+      <h2>📄 View Curtis' Resume</h2>
+      <a href="https://docs.google.com/document/d/1wgQkkvsqBtE1Jybe9wo9-q5b-pr_cPofQdq8egdR2Qg/edit?usp=sharing" download>Download PDF Résumé</a>
+    </section>
+
+    <section class="tool-section">
+      <h2>📣 Testimonials</h2>
+      <blockquote>“Curtis developed the security architecture for our Global hybridized IAM strategy end-to-end Leading to a multi Billion Dollar Merger & Acquisition— brilliant work.” ► CIO, Apptio</blockquote>
+      <blockquote>“He’s a go-to for on-prem and agnostic environment cloud security and compliance readiness.” ► CISO, Humana</blockquote>
+	  <blockquote>“Curtis' adeptness, conversational proficiency, and corporate readiness is welcome in ANY Compliance Audit” ► Grant Thornton, Optum HITRUST Audit i1 & r2</blockquote>
+	  <blockquote>“Curtis' availability and off-the-cuff knowledge expedites projects, and allowed us to complete multiple engagements 2-6 weeks ahead of forecast.” ► CISO, InfoSec Coverdell</blockquote>
+	  <blockquote>“Curtis architected our entire IAM migration to Azure and AWS, enabling full compliance with HIPAA, SOX, and PCI-DSS across 1,400+ API endpoints—an outstanding execution.” ► CISO, Gallagher</blockquote> <blockquote>“His IAM governance strategy and zero-trust implementation reduced our threat exposure by over 70%. Curtis is a strategic force in cloud security.” ► Director of Cybersecurity, IMPLUS</blockquote> <blockquote>“During a sensitive M&A involving 20+ brands, Curtis engineered a flawless hybrid-cloud integration across AWS and Azure with zero data leakage.” ► VP of Infrastructure, CPS</blockquote> <blockquote>“The cloud compliance portals and security documentation Curtis delivered streamlined our FedRAMP and SOC2 audits—cutting our attestation cycle by half.” ► GRC Lead, Apptio</blockquote> <blockquote>“Curtis’s Red Team simulations and purple team integrations hardened our Azure footprint like never before. Our incident response maturity skyrocketed.” ► Security Operations Manager, NYU Langone</blockquote> <blockquote>“We gained unparalleled IAM visibility across 7,000 users and 12,000+ devices thanks to Curtis’s blueprint. His work enabled real-time posture reporting to the board.” ► CIO, IMPLUS</blockquote> <blockquote>“His Terraform-driven Azure Labs environment revolutionized our internal security training. Curtis turns infrastructure into learning experiences.” ► DevSecOps Manager, CPS</blockquote> <blockquote>“Curtis transformed our GCP and AWS security baselines into a unified, compliant cloud control framework—seamlessly aligning with ISO 27001 and HITRUST.” ► Cloud Architect, Gallagher</blockquote> <blockquote>“The shift-left architecture Curtis pioneered empowered our developers with secure-by-default APIs—an IAM milestone for our engineering org.” ► VP of Engineering, Apptio</blockquote> <blockquote>“Curtis turned our vulnerability management process from reactive to predictive using GuardDuty, CodeGuru, and strategic threat modeling.” ► Security Compliance Lead, CPS</blockquote>
+    </section>
+
+    <p id="last-updated"></p>
+  </main>
+
+  <footer>
+    Created by Curtis Jones · <a href="mailto:help@blactec.biz">Contact</a> · © 2025-2026
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script>
+    // Chart.js mock dashboard //
+    const ctx = document.getElementById('securityChart').getContext('2d');
+    new Chart(ctx, {
+      type: 'bar',
+      data: {
+        labels: ['IAM Events', 'Secpol GPO Changes', 'PAM Tokens', 'SIEM Alerts', 'User Requests', 'Azure KQL Log Searches'],
+        datasets: [{
+          label: 'Security Activity (Enterprise # in Thousands)',
+          data: [421, 83, 222, 429, 228, 332],
+          backgroundColor: ['#007acc', '#36a2eb', '#4bc0c0', '#ff6384', '#9a63ff', '#2cc8d3']
+        }]
+      }
+    });
+
+
+    // Dark mode toggle
+    function toggleDarkMode() {
+      document.body.classList.toggle('dark-mode');
+    }
+
+    // Last updated timestamp
+    document.getElementById("last-updated").innerText = "Last updated: " + new Date(document.lastModified);
+  </script>
+</body>
+</html>
